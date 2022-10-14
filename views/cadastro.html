@@ -1,34 +1,37 @@
 <h3>Preencha os campos abaixo</h3>
 
-<form action="">
-    <div class="row">
-        <div class="col">
-            <label for="form-control">Nome</label>
-            <input type="text" class="form-control" placeholder="Nome" aria-label="First name">
-        </div>
-        <div class="col">
-            <label for="form-control">Sobrenome</label>
-            <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Last name">
-        </div>
+<form id="" class="row g-3">
+    <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Nome</label>
+        <input type="email" class="form-control" placeholder="Nome" id="idNome">
     </div>
-</form>
-
-<form class="row g-3">
+    <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Sobrenome</label>
+        <input type="password" class="form-control" placeholder="Sobrenome" id="idSobrenome">
+    </div>
     <div class="col-md-6">
         <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4">
+        <input type="email" class="form-control" placeholder="name@example.com" id="inputEmail4">
     </div>
     <div class="col-md-6">
         <label for="inputPassword4" class="form-label">Password</label>
-        <input type="password" class="form-control" id="inputPassword4">
+        <input type="password" class="form-control" placeholder="Password" id="inputPassword4">
     </div>
-    <div class="col-12">
+    <div class="col-md-2">
+        <label for="inputZip" class="form-label">CEP</label>
+        <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="col-8">
         <label for="inputAddress" class="form-label">Rua</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        <input type="text" class="form-control" id="inputAddress" placeholder="Ex: Rua apucarana, 123">
+    </div>
+    <div class="col-md-2">
+        <label for="number" class="form-label">Número</label>
+        <input type="text" class="form-control" id="number">
     </div>
     <div class="col-12">
         <label for="inputAddress2" class="form-label">Bairro</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, casa, galpão...">
     </div>
     <div class="col-md-6">
         <label for="inputCity" class="form-label">Cidade</label>
@@ -37,20 +40,16 @@
     <div class="col-md-4">
         <label for="inputState" class="form-label">Estado</label>
         <select id="inputState" class="form-select">
-            <option selected>Choose...</option>
-            <option selected>Santa Catarina</option>
-            <option selected>Rio Grande do Sul</option>
-            <option selected>Paraná</option>
-            <option selected>São Paulo</option>
-            <option selected>Rio de Janeiro</option>
-            <option selected>Minas Gerais</option>
-            <option selected>Bahia</option>
-            <option selected>Goiás</option>
+            <option selected>Escolha...</option>
+            <option value="1">Santa Catarina</option>
+            <option value="2">Rio Grande do Sul</option>
+            <option value="3">Paraná</option>
+            <option value="4">São Paulo</option>
+            <option value="5">Rio de Janeiro</option>
+            <option value="6">Minas Gerais</option>
+            <option value="7">Bahia</option>
+            <option value="8">Goiás</option>
         </select>
-    </div>
-    <div class="col-md-2">
-        <label for="inputZip" class="form-label">CEP</label>
-        <input type="text" class="form-control" id="inputZip">
     </div>
     <div class="col-12">
         <div class="form-check">
@@ -60,16 +59,17 @@
             </label>
         </div>
     </div>
-    <div class="col-12">
-        <button type="submit" class="btn btn-primary">Sign in</button>
-    </div>
-
+    
     <form action="">       
         <br>
         <div class="input-group mb-3">
             <label class="input-group-text" for="inputGroupFile01">Upload</label>
             <input type="file" class="form-control" id="inputGroupFile01">
         </div>
-    
+        
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
     </form>
 </form>
+
