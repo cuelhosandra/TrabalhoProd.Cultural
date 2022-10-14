@@ -88,12 +88,29 @@ footer que o bootstrap não tem
 }
 
 
-/********************* PARTE DA SANDRA *************/
+/********************* FEITO POR SANDRA *************/
 
+
+/*SLOGAN*/
+
+h2.slogan {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #99d688;
+}
+
+/*PARTE INICIAL*/
+.flex{
+    display:flex;
+    align-items: center;
+}
+
+/*TIMELINE*/
 
 .timeline {
     position: relative;
-    background: #ADD8E6;
+    background: #99d688;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -107,7 +124,7 @@ footer que o bootstrap não tem
     top: 0;
     left: 50%;
     margin-left: -2px;
-    border-right: 2px dashed #008080;
+    border-right: 2px dashed white;
     height: 100%;
     display: block;
 }
@@ -123,7 +140,7 @@ footer que o bootstrap não tem
     top: 15px;
     text-align: right;
     margin-right: 20px;
-    color: #008080	;
+    color: white	;
     font-size: 1.5rem;
 }
 .timeline-row .timeline-time small {
@@ -133,7 +150,7 @@ footer que o bootstrap não tem
 .timeline-row .timeline-content {
     position: relative;
     padding: 20px 30px;
-    background: #008080;
+    background: white;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -149,7 +166,7 @@ footer que o bootstrap não tem
     top: 20px;
     height: 16px;
     width: 16px;
-    background: #008080;
+    background: white;
 }
 .timeline-row .timeline-content:before {
     content: "";
@@ -162,8 +179,8 @@ footer que o bootstrap não tem
     -moz-border-radius: 100px;
     border-radius: 100px;
     z-index: 10;
-    background: #008080;
-    border: 2px dashed #008080	;
+    background: white;
+    
 }
 .timeline-row .timeline-content h4 {
     margin: 0 0 20px 0;
@@ -183,7 +200,6 @@ footer que o bootstrap não tem
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     border-radius: 100px;
-    background: #008080	;
     margin-bottom: 10px;
     display: inline-block;
 }
@@ -195,10 +211,7 @@ footer que o bootstrap não tem
     margin: 5px;
     max-width: 60px;
 }
-.timeline-row .timeline-content .badge {
-    color: #ffffff;
-    background: linear-gradient(120deg, #008080	 0%, #008080	 100%);
-}
+
 .timeline-row:nth-child(even) .timeline-content {
     margin-left: 40px;
     text-align: left;
@@ -235,10 +248,32 @@ footer que o bootstrap não tem
     transform: rotate(45deg);
 }
 
-h2 {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   color: #008080;
+/* PARTE MISSÃO, VISÃO E VALORES*/ 
+
+imgmissao{
+    height: 200px;
+    }
+
+.flex2{
+    display: flex;
+    align-items: center;
+}
+
+imgvisao{
+    height: 200px;
+    }
+
+.flex3{
+    display: flex;
+    align-items: center;
+}
+
+imgvalor{
+    height: 200px;
+    }
+
+.flex4{
+    display: flex;
+    align-items: center;
 }
 
