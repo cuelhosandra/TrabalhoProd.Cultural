@@ -1,36 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Oswald:wght@200;400;700&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,500&display=swap');
+/********************* FEITO POR CRISTIANO *************/
+/*  Desenvolvido por Cristiano Freese
+    Seletores utilizados para responsividade e estilo da página, complementares ao Bootstrap
+*/
+
+/* Fonte Monteserrat Alternates utilizada nas páginas */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
-/* efeito hover na navegação */
+/* Configurações para não colapsar navbar em telas com largura inferior a 990px */
+/* Configurações gerais da navbar, como posição da logo, efeito hover, altura dos itens, cores */
 @media screen and (min-width:990px) {
     .navbar-brand{
-        position: absolute;
+        position: left;
         left:50%;
         top:0;
-        margin-left:-60px;
     }
     .nav-link{
         transition:all 0.5s;
     }
-    .nav-link:hover, .nav-link.active{
-        background-color: #FF1927;
-        color: #fff!important;
+    .nav-link.active{
+        color: #84659B!important;
+    }
+    .nav-link:hover{
+        /*Roxo - #84659B          Verde - #A4DA95*/
+        color: #A4DA95!important;
         transition:all 0.5s;
     }
     .configNavbar{
         height: 100px;
     }
     li.nav-item a{
-        padding:38px 0;
+        padding:58px 0px;
+        color: #84659B;
     }
-    
 }
 
+/* Configurações gerais do conteúdo injetado em main */
 main{
-    padding: 80px 0;
+    padding: 10px 0;
 }
+
+
 
 .tituloPadrao{
     color:#FF1927;
@@ -44,7 +56,7 @@ main{
     box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.75);
 }
 
-/* limitar altura do card*/
+ Limitar altura do card
 .cardsProds{
     align-items: stretch;
 }
@@ -64,32 +76,47 @@ main{
     bottom:5px;
     right: 5px;
 }
-/*
-footer que o bootstrap não tem 
-*/
+
+/* Configurações gerais do footer, como efeito hover, altura dos itens, cores */
 .page-footer{
     position: fixed;
     width: 100%;
-    bottom: 0;
-    background-color: #FF1927;
+    bottom: 0px;
+    background-color: #A4DA95;
+    padding:10px;
+    color: #84659B;
 }
-.page-footer .footer-copyright{
-    padding:20px 0;
-}
-.footer-copyright *{
-    color:#fff;
+.footer-copyright .footer-social{
     text-decoration: none;
+    padding:0px;
+}
+.footer-social a{
+    text-decoration:none;
+    color:#84659B
+}
+.footer-social a i{
+font-size: 28px;
+}
+.footer-social a:hover{
+    color: #7bdb61!important;
+    transition:all 0.5s;
 }
 .footer-copyright a:hover{
-    color:#000;
+    color: #7bdb61!important;
+    transition:all 0.5s;
 }
-.right{
-    float: right;
+.footer-copyright{
+    font-size: 14px;
+    text-decoration:none;
+    color:#84659B
+}
+.footer-copyright a{
+    text-decoration:none;
+    color:#84659B
 }
 
 
 /********************* FEITO POR SANDRA *************/
-
 
 /*SLOGAN*/
 
@@ -277,3 +304,8 @@ imgvalor{
     align-items: center;
 }
 
+/********************* FEITO POR PAULO *************/
+
+/********************* FEITO POR MICHEL *************/
+
+/********************* FEITO POR ANAISA *************/
