@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Oswald:wght@200;400;700&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,500&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* efeito hover na navegação */
+@media screen and (min-width:990px) {
+    .navbar-brand{
+        position: absolute;
+        left:50%;
+        top:0;
+        margin-left:-60px;
+    }
+    .nav-link{
+        transition:all 0.5s;
+    }
+    .nav-link:hover, .nav-link.active{
+        background-color:  #99d688;
+        color: #fff!important;
+        transition:all 0.5s;
+    }
+    .configNavbar{
+        height: 100px;
+    }
+    li.nav-item a{
+        padding:38px 0;
+    }
+    
+}
+
+main{
+    padding: 80px 0;
+}
+
+.tituloPadrao{
+    color: #99d688;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+    border-bottom:1px solid  #99d688;
+}
+.showImg{
+    border:1px solid #000;
+    box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.75);
+}
+
+/* limitar altura do card*/
+.cardsProds{
+    align-items: stretch;
+}
+.cardsProds .card{
+    height: 100%;
+    position: relative;
+}
+.cardsProds .card-img{
+    max-height: 250px;
+    overflow: hidden;
+}
+.cardsProds .card .card-action{
+    clear: both;
+}
+.cardsProds .card .btnAcao{
+    position: absolute;
+    bottom:5px;
+    right: 5px;
+}
+/*
+footer que o bootstrap não tem 
+*/
+.page-footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #99d688;
+}
+.page-footer .footer-copyright{
+    padding:20px 0;
+}
+.footer-copyright *{
+    color:#fff;
+    text-decoration: none;
+}
+.footer-copyright a:hover{
+    color:#000;
+}
+.right{
+    float: right;
+}
+
+
+/********************* FEITO POR SANDRA *************/
+
+
+/*SLOGAN*/
+
+h2.slogan {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #99d688;
+}
+
+/*PARTE INICIAL*/
+.flex{
+    display:flex;
+    align-items: center;
+}
+
+/*TIMELINE*/
+
+.timeline {
+    position: relative;
+    background: #99d688;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 5em;
+    margin: 0 auto 1rem auto;
+    overflow: hidden;
+}
+.timeline:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    border-right: 2px dashed white;
+    height: 100%;
+    display: block;
+}
+
+.timeline-row {
+    padding-left: 50%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.timeline-row .timeline-time {
+    position: absolute;
+    right: 50%;
+    top: 15px;
+    text-align: right;
+    margin-right: 20px;
+    color: white	;
+    font-size: 1.5rem;
+}
+.timeline-row .timeline-time small {
+    display: block;
+    font-size: 0.8rem;
+}
+.timeline-row .timeline-content {
+    position: relative;
+    padding: 20px 30px;
+    background: white;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.timeline-row .timeline-content:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    height: 16px;
+    width: 16px;
+    background: white;
+}
+.timeline-row .timeline-content:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -49px;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    z-index: 10;
+    background: white;
+    
+}
+.timeline-row .timeline-content h4 {
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 150%;
+}
+.timeline-row .timeline-content p {
+    margin-bottom: 30px;
+    line-height: 150%;
+}
+.timeline-row .timeline-content i {
+    font-size: 1.2rem;
+    line-height: 100%;
+    padding: 15px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.timeline-row .timeline-content .thumbs {
+    margin-bottom: 20px;
+    display: flex;
+}
+.timeline-row .timeline-content .thumbs img {
+    margin: 5px;
+    max-width: 60px;
+}
+
+.timeline-row:nth-child(even) .timeline-content {
+    margin-left: 40px;
+    text-align: left;
+}
+.timeline-row:nth-child(even) .timeline-content:after {
+    left: -8px;
+    right: initial;
+    border-bottom: 0;
+    border-left: 0;
+    transform: rotate(-135deg);
+}
+.timeline-row:nth-child(even) .timeline-content:before {
+    left: -52px;
+    right: initial;
+}
+.timeline-row:nth-child(odd) {
+    padding-left: 0;
+    padding-right: 50%;
+}
+.timeline-row:nth-child(odd) .timeline-time {
+    right: auto;
+    left: 50%;
+    text-align: left;
+    margin-right: 0;
+    margin-left: 20px;
+}
+.timeline-row:nth-child(odd) .timeline-content {
+    margin-right: 40px;
+}
+.timeline-row:nth-child(odd) .timeline-content:after {
+    right: -8px;
+    border-left: 0;
+    border-bottom: 0;
+    transform: rotate(45deg);
+}
+
+/* PARTE MISSÃO, VISÃO E VALORES*/ 
+
+imgmissao{
+    height: 200px;
+    }
+
+.flex2{
+    display: flex;
+    align-items: center;
+}
+
+imgvisao{
+    height: 200px;
+    }
+
+.flex3{
+    display: flex;
+    align-items: center;
+}
+
+imgvalor{
+    height: 200px;
+    }
+
+.flex4{
+    display: flex;
+    align-items: center;
+}
+
+/* PARCEIROS - INÍCIO*/ 
+
+/*
+.containerproje{
+    position: relative;
+}
+*/
+.containerproje .slide-container .slide{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 9%;
+    padding-bottom: 70px;
+    margin-left:-60px
+}
+
+
+.containerproje .slide-container .slide .contentproje{
+    flex: 1 1 350px;
+    animation: slideContent .8s linear .8s backwards;
+}
+
+@keyframes slideContent{0%
+{
+    opacity: 0;
+    transform: translateX(-50px);
+}
+}
+
+
+.containerproje .slide-container .slide .contentproje h3{
+    font-size: 35px;
+    color:  #99d688;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.containerproje .slide-container .slide .contentproje p{
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Noto Sans', sans-serif;
+    width: 40%;
+    height: 10%;
+
+}
+
+.containerproje .slide-container .slide .contentproje .bntproj{
+    margin-top: 10px;
+    display: inline-block;
+    background:  #99d688;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 9px 40px;
+    border-radius: 5px;
+    border: 2px solid  #99d688;
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+}
+
+.containerproje .slide-container .slide .contentproje .bntproj:hover{
+    background:  #99d688;
+    border: 2px solid  #99d688;
+    color: #ffffff;
+}
+
+.containerproje .slide-container{
+    display: none;
+}
+
+.containerproje .slide-container.active{
+    display: block;
+}
+
+.containerproje .slide-container:nth-child(1) .slide{
+    background: url(/img/parceiros_audiovisual.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerproje .slide-container:nth-child(2) .slide{
+    background: url(/img/parceiros_agencia.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerproje .slide-container:nth-child(3) .slide{
+    background: url(/img/parceiros_agenciamento.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerproje #prev,
+.containerproje #next {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    background:  #99d688;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+
+.containerproje #prev:hover,
+.containerproje #next:hover{
+    background:  #99d688;
+}
+.containerproje #prev{
+    left: 20px;
+}
+
+.containerproje #next{
+    right: 20px;
+}
+
+
+
+@media(max-width: 500px){
+    .containerproje #prev{
+        left: 0px;
+        top: 60%;
+    }
+
+    .containerproje #next{
+        right: 0px;
+        top: 60%;
+    }
+
+
+    .containerproje .slide-container .slide .contentproje p{
+        font-size: 16px;
+        color: #ffffff;
+        font-family: 'Noto Sans', sans-serif;
+        width: 70%;
+        height: 10%;
+
+    }
+}
+
+/* PARCEIROS FIM*/ 
