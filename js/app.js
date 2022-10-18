@@ -2,7 +2,7 @@ async function injectContent() {
     //pega o endereço da url
     let url = location.href; 
 
-    //divide o endereço pelo = e aplica os valores como arra
+    //divide o endereço pelo = e aplica os valores como array
     file = url.split('='); 
 
     let view = (file[1] != undefined) ? file[1] : 'inicio'; 
@@ -28,20 +28,14 @@ function activeLink(){
     
 }
 
-function alerta(){
-    alert('Passou o mouse');
-}
+// function alerta(){
+//     alert('Passou o mouse');
+// }
 
 injectContent();
 activeLink();
 
-let elem = document.getElementById('teste');    //
 
-console.log(elem);
-
-elem.addEventListener('click',function(){
-    alert('cliquei no link')
-})
 
 
 
