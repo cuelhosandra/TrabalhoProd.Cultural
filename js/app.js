@@ -1,3 +1,4 @@
+/********************* FEITO POR CRISTIANO *************/
 async function injectContent() {
     //pega o endereço da url
     let url = location.href; 
@@ -42,4 +43,12 @@ console.log(elem);
 elem.addEventListener('click',function(){
     alert('cliquei no link')
 })
+
+/********************* FEITO POR SANDRA *************/
+
+/********************* FEITO POR PAULO *************/
+
+/********************* FEITO POR MICHEL *************/
+
+/********************* FEITO POR ANAISA *************/
 
