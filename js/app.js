@@ -1,4 +1,5 @@
-/********************* FEITO POR CRISTIANO *************/
+/*DESENVOLVIDO POR CRISTIANO FREESE*/
+/* INJEÇÃO DE HTML NA TAG MAIN DO ARQUIVO INDEX.HTML */
 async function injectContent() {
     //pega o endereço da url
     let url = location.href; 
@@ -21,23 +22,18 @@ async function injectContent() {
     inject.innerHTML = html; //aplica a injeção de conteúdo no container de destino
 }
 
+/* CUSTOMIZAÇÕES GERAIS */
+/* INDICAÇÃO VISUAL DO LINK ATUAL SELECIONADO NO NAVBAR*/
 function activeLink(){
-    let url = location.href;
-    let view = url.split('=');
-    let sessao = (view[1] != undefined) ? view[1] : 'inicio'; 
-    document.getElementById(sessao).className += ' active';
-    
+  let url = location.href;
+  let view = url.split('=');
+  let sessao = (view[1] != undefined) ? view[1] : 'inicio'; 
+  document.getElementById(sessao).className += ' active';
 }
 
-// function alerta(){
-//     alert('Passou o mouse');
-// }
-
+/* EXECUÇÃO DAS FUNÇÕES */
 injectContent();
 activeLink();
-
-
-
 
 
 /********************* FEITO POR SANDRA *************/
