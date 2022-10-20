@@ -1,5 +1,6 @@
-<!--PAGINA CRIADA POR CRISTIANO -->
+<!--DESENVOLVIDO POR CRISTIANO FREESE -->
 
+<!--CAROUSEL COM 4 IMAGENS ALTERANDO DE FORMA TEMPORIZADA 5S-->
 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="5000">
@@ -25,100 +26,81 @@
   </button>
 </div>
 
+<hr class="my-5">
+
+<!--TITULO DE BOAS VINDAS-->
 <div class="container">
-  <hr class="my-3">
-  <h1 style="color:#84659B; text-align: center;">Seja Bem Vindo a Cultura!</h1>
-  <hr class="my-3">
+  <h1 style="text-align: center;">Seja Bem Vindo a Cultura!</h1>
 </div>
 
-<div class="container marketing">
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2><span class="text-muted">Valorizamos</span></h2>
-      <p class="lead">o artista local e tornamos realidade o seu projeto cultural de teatro, música, artes visuais, dança, oficinas e literatura.</p>
+<!--GRID DE 4 LINHAS POR 2 COLUNAS CONTENDO IMAGENS E SUBTITULOS-->
+<div class="container text-center">
+  <hr class="my-4">
+  <div class="flex2 align-items-center">
+    <div class="col-5">
+      <img class="rounded-circle" height="157" width="126" src="upload/Leo2.png" alt="...">
     </div>
-    <div class="col-md-5">
-      <div class="card" style="width: 30%;">
-        <div class="card-img">
-          <img src="upload/Historias3.png" class="card-img-top" alt="...">
-        </div>
-      </div>
+    <div class="col-7">
+      <h2><span>Valorizamos</span></h2><p><small> o artista local e tornamos realidade o seu projeto cultural de teatro, música, artes visuais, dança, oficinas e literatura.</small></p>
     </div>
   </div>
-  
-  <hr class="my-3">
-  
-  <div class="row featurette">
-    <div class="col-md-7 order-md-2">
-      <h2><span class="text-muted">Viabilizamos</span></h2>
-      <p class="lead">Viabilizamos seu projeto pela Lei Federal de Incentivo à Cultura, Programas Estaduais e Municipais.</p>
+    
+  <hr class="my-4">
+
+  <div class="flex2 align-items-center">
+    <div class="col-7">
+      <h2><span>Viabilizamos</span></h2><p><small> seu projeto pela Lei Federal de Incentivo à Cultura através de Editais Estaduais e Municipais.</small></p>
     </div>
-    <div class="col-md-5">
-      <div class="card" style="width: 30%;">
-        <div class="card-img">
-          <img src="upload/Historias3.png" class="card-img-top" alt="...">
-        </div>
-      </div>
+    <div class="col-5">
+      <img class="rounded-circle" height="157" width="126" src="upload/Folclorico.png" alt="...">
     </div>
   </div>
 
-  <hr class="my-3">
-  
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2><span class="text-muted">Assessoramos</span></h2>
-      <p class="lead">todas as etapas de planejamento, captação, prestação de contas e execução da sua produção.</p>
+  <hr class="my-4">
+
+  <div class="flex2 align-items-center">
+    <div class="col-5">
+      <img class="rounded-circle" height="157" width="126" src="upload/Soila.png" alt="...">
     </div>
-    <div class="col-md-5">
-      <div class="card" style="width: 30%;">
-        <div class="card-img">
-        <img src="upload/Historias3.png" class="card-img-top" alt="...">
-        </div>
-      </div>
+    <div class="col-7">
+      <h2><span>Assessoramos</span></h2><p><small> todas as etapas de planejamento, captação, prestação de contas e execução da sua produção.</small></p>
+    </div>
+  </div>
+    
+  <hr class="my-4">
+
+  <div class="flex2 align-items-center">
+    <div class="col-7">
+      <h2><span>Já aprovamos</span></h2><p><small> mais de 300 projetos acessibilizando cultura para crianças, jovens e adultos.</small></p>
+    </div>
+    <div class="col-5">
+      <img class="rounded-circle" height="157" width="126" src="upload/Historias3.png" alt="...">
     </div>
   </div>
 
-  <hr class="my-3">
-
-  <div class="row featurette">
-    <div class="col-md-7  order-md-2">
-      <h2><span class="text-muted">Já aprovamos</span></h2>
-      <p class="lead">mais de 300 projetos acessibilizando cultura para crianças, jovens e adultos.</p>
-    </div>
-    <div class="col-md-5">
-      <div class="card" style="width: 30%;">
-        <div class="card-img">
-          <img src="upload/Historias3.png" class="card-img-top" alt="...">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <hr class="my-3">
+  <hr class="my-4">
 </div>
 
-<div class="container">
-  <h1 style="color:#84659B; text-align: center;">Acompanhe nossos últimos Posts no Instagram (API)</h1>
-  <hr class="my-3">
+<!--CONTAINER COM ÚLTIMOS 3 POSTS DE INSTAGRAM - API POSTS INSTAGRAM DINAMICOS-->
+<div class="container Posts">
+  <h1 style="text-align: center;">Acompanhe nossos últimos Posts no Instagram (API)</h1>
 </div>
 
-<div class="container">
+<hr class="my-5">
+
+<!--CONTAINER CONTENDO ACCORDION SOBRE A LEI ROUANET - API LEI ROUANET-->
+<div class="container pb-5">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Você conhece a Lei Rouanet? (API)
-      </button>
+      <button class="accordion-button collapsed d-block text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><div><i class="icofont-question-circle"> Conheça a Lei Rouanet</i></div></button>
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+      <div class="accordion-body text-align">
+        <br>
         <strong>A Lei Rouanet, também conhecida como Lei Federal de Incentivo à Cultura,</strong> n. 8313, de 23 de dezembro de 1991, é um dispositivo criado pelo governo para promover, proteger e valorizar as expressões culturais nacionais. O nome é uma homenagem a Sérgio Paulo Rouanet, que era Ministro da Cultura quando a lei foi promulgada.
-
         A vantagem desse regulamento para os organizadores de evento é o incentivo financeiro oferecido a pessoas jurídicas e físicas: patrocinar a cultura através do Imposto de Renda (IR). Como? Empresas podem investir até 4% do IR devido e cidadãos, 6%.
-
-        Até o momento já foram aprovados xxxx projetos e foram captados R$xxxxxx,xx.
+        <p>Desde a sua criação já foram beneficiados xxxxxx projetos, com um aporte de R$xxxxxx,xx para execução.</p>
       </div>
     </div>
   </div>
-  <hr class="my-3">
 </div>
-

@@ -1,127 +1,102 @@
-/********************* FEITO POR CRISTIANO *************/
-/*  Desenvolvido por Cristiano Freese
-    Seletores utilizados para responsividade e estilo da página, complementares ao Bootstrap
-*/
+/*DESENVOLVIDO POR CRISTIANO FREESE*/
+/*SELETORES UTILIZADOS PARA RESPONSIVIDADE E ESTILO DA PÁGINA*/
 
-/* Fonte Monteserrat Alternates utilizada nas páginas */
+/*FONTE PRINCIPAL ALTERNATIVA - UTILIZADA NA CRIAÇÃO DA LOGO    
+Fonte Monteserrat Alternates utilizada nas páginas 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
-*{
-    font-family: 'Montserrat Alternates', sans-serif;
-}
+*{ font-family: 'Montserrat Alternates', sans-serif; }*/
 
-/* Configurações para não colapsar navbar em telas com largura inferior a 990px */
-/* Configurações gerais da navbar, como posição da logo, efeito hover, altura dos itens, cores */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Oswald:wght@200;400;700&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,500&display=swap');
+*{ font-family: 'Roboto', sans-serif; }
+
+/* CONFIGURACOES PARA NAO COLAPSAR NAVBAR EM TELAS COM LARGURA INFERIOR A 990PX */ 
+/* CONFIGURACOES GERAIS DA NAVBAR, COMO POSIÇÃO DA LOGO, EFEITO HOVER, ALTURA DOS ITENS, CORES */ 
+/* CORES DA LOGO - ROXO - #84659B       VERDE - #A4DA95*/
 @media screen and (min-width:990px) {
-    .navbar-brand{
-        position: left;
-        left:50%;
-        top:0;
-    }
-    .nav-link{
-        transition:all 0.5s;
-    }
-    .nav-link.active{
-        color: #84659B!important;
-    }
-    .nav-link:hover{
-        /*Roxo - #84659B          Verde - #A4DA95*/
-        color: #A4DA95!important;
-        transition:all 0.5s;
-    }
-    .configNavbar{
-        height: 100px;
-    }
-    li.nav-item a{
-        padding:58px 0px;
-        color: #84659B;
-    }
-}
-
-/* Configurações gerais do conteúdo injetado em main */
-main{
-
-    padding: 10px 0px;
-    bottom: 100px;
-
-}
-
-.tituloPadrao{
-    color:#FF1927;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-size: 3em;
-    border-bottom:1px solid #FF1927;
-}
-.showImg{
-    border:1px solid #000;
-    box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.75);
-}
-
- Limitar altura do card
-.cardsProds{
-    align-items: stretch;
-}
-.cardsProds .card{
-    height: 100%;
-    position: relative;
-}
-.cardsProds .card-img{
-    max-height: 250px;
-    overflow: hidden;
-}
-.cardsProds .card .card-action{
-    clear: both;
-}
-.cardsProds .card .btnAcao{
-    position: absolute;
-    bottom:5px;
-    right: 5px;
-}
-
-/* Configurações gerais do footer, como efeito hover, altura dos itens, cores */
-.page-footer{
+  .navbar-brand{
+    position: left;
+    left:50%;
+    top:0;
+  }
     
-    width: 100%;
-    bottom: 0px;
-    background-color: #A4DA95;
-    padding:10px;
+  .nav-link{
+    transition:all 0.5s;
+  }
+    
+  .nav-link.active{
+    color: #84659B!important;
+  }
+    
+  .nav-link:hover{
+    color: #A4DA95!important;
+    transition:all 0.5s;
+  }
+    
+  .configNavbar{
+    height: 100px;
+  }
+    
+  li.nav-item a{
+    padding:58px 0px;
     color: #84659B;
+  }
 }
-.footer-copyright .footer-social{
-    text-decoration: none;
-    padding:0px;
-}
-.footer-social a{
-    text-decoration:none;
-    color:#84659B
-}
-.footer-social a i{
-font-size: 28px;
-}
-.footer-social a:hover{
-    color: #7bdb61!important;
-    transition:all 0.5s;
-}
-.footer-copyright a:hover{
-    color: #7bdb61!important;
-    transition:all 0.5s;
 
+/* CONFIGURAÇÕES GERAIS DO CONTEÚDO INJETADO EM MAIN */
+main{
+  padding: 10px 0px;
+  bottom: 100px;
+  background-color: rgb(209, 218, 226);
+  color:#84659B;
 }
+
+/* CONFIGURAÇÕES GERAIS DO FOOTER, COMO EFEITO HOVER, ALTURA DOS ITENS, CORES */
+.page-footer{
+  width: 100%;
+  bottom: 0px;
+  background-color: #A4DA95;
+  padding:10px;
+  color: #84659B;
+}
+
+.footer-social a{
+  text-decoration:none;
+  color:#84659B;
+}
+
+.footer-social a i{
+  font-size: 28px;
+}
+
+.footer-social a:hover{
+  color: #7bdb61!important;
+  transition:all 0.5s;
+}
+
+.footer-copyright a:hover{
+  color: #7bdb61!important;
+  transition:all 0.5s;
+}
+
 .footer-copyright{
-    font-size: 14px;
-    text-decoration:none;
-    color:#84659B
+  font-size: 14px;
 }
 
 .footer-copyright a{
-    text-decoration:none;
-    color:#84659B
+  text-decoration:none;
+  color:#84659B
 }
 
+/* CONFIGURAÇÕES RELACIONADAS AO COMPONENTE ACCORDION */
+.icofont-question-circle{
+  font-size: 28px;
+}
 
 /********************* FEITO POR SANDRA *************/
 
-/*SLOGAN*/
+/* /PAGINA A EMPRESA FEITO POR SANDRA/
+
+/SLOGAN/ */
 
 h2.slogan {
    display: flex;
@@ -130,7 +105,8 @@ h2.slogan {
    color: #99d688;
 }
 
-/*PARTE INICIAL*/
+/* PARTE INICIAL */
+
 .flex{
     display:flex;
     align-items: center;
@@ -141,7 +117,7 @@ h2.slogan {
     line-height: 33px;
 }
 
-/*TIMELINE BOOTSTRAP - COM ALGUMAS ALTERAÇÕES - RESPONSIVO PARA MOBILE*/
+/* TIMELINE BOOTSTRAP - COM ALGUMAS ALTERAÇÕES - RESPONSIVO PARA MOBILE */
 
 .main-timeline {
     position: relative;
@@ -257,7 +233,7 @@ h2.slogan {
 }
 
 .main-timeline .date-outer:before {
-    background: #fff;
+    background: #d1dae3;
     border: 2px solid #99d688;
     left: -6px
 }
@@ -392,7 +368,7 @@ h2.slogan {
     }
 }
 
-/* MISSÃO, VISÃO E VALORES*/ 
+/* MISSÃO, VISÃO E VALORES */ 
 
 imgmissao{
     height: 200px;
@@ -419,6 +395,94 @@ imgvalor{
 .flex4{
     display: flex;
     align-items: center;
+}
+
+/* BOTÕES */
+
+.third {
+  border-color: black;
+  color: black;
+  box-shadow: 0 0 40px 40px #d1dae3 inset, 0 0 0 0 #d1dae3;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.third:hover {
+  box-shadow: 0 0 10px 0 #99d688 inset, 0 0 10px 4px #99d688;
+}
+
+/* PAG LIVROS FEITO POR SANDRA */
+
+/* TITULO DESTAQUES */
+
+.titulodestaque{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#42be20
+}
+
+/* DESTAQUES */
+
+.destaque{
+  position: relative;
+  display: inline-block;
+  width: 280px;
+  height: 370px;
+  background-color: #d1dae3;
+  text-align: center;
+
+/* tamanho, tipo, cor */
+
+  border:0.5px solid #99d688;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.8);
+  margin:0 40px;
+}
+.destaque .imagem{
+  width: 100%;
+  height: 215px;
+  background-size: 100%;
+  background-position: center;
+}
+
+.destaque h2{
+  font-size: 17px;
+  color:black;
+}
+.destaque .valor{
+  font-size: 25px;
+  color: #42be20;
+  font-weight: 606px;
+  text-transform: uppercase;
+}
+.destaque .valor.riscado{
+  font-size: 14px;
+  color: #42be20;
+  display: block;
+  text-decoration: line-through;
+}
+.destaque .valor small{
+  color:#42be20;
+}
+.destaque .compreaqui{
+  display: block;
+  position: absolute;
+  width: 257px;
+  padding: 15px 0;
+  background:#d1dae3;
+  left:10px;
+  bottom: 8px;
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 9px;
+  transition:all 0.5s;
+}
+.destaque .compreaqui:hover{
+  background: #99d688;
+  color: #FFF;
+  transition:all 0.5s;
 }
 
 /********************* FEITO POR PAULO *************/
@@ -730,5 +794,4 @@ imgvalor{
       
       font-size: 14px;
     }
-  
-}
+ }
