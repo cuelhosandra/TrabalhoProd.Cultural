@@ -1,123 +1,80 @@
-<!--Desenvolvido por Cristiano Freese-->
-<!--Utiliza Bootstrap CSS JS, Iconfont e JavaScript-->
-<!--NavBar e Footer com responsividade tela large e esquema de cores personalizados com a logo-->
+<!--DESENVOLVIDO POR CRISTIANO FREESE-->
+<!--UTILIZA BOOTSTRAP, ICOFONT E JAVASCRIPT-->
+<!--NAVBAR E FOOTER COM RESPONSIVIDADE TELA LARGE E ESQUEMA DE CORES PERSONALIZADAS COM A LOGO-->
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="icofont/icofont.min.css">
-    <link rel="stylesheet" href="css/app.css">
-    <title>Soi Arte e Cultura</title>
-
-    <style>
-        .bd-placeholder-img {
-          font-size: 1.125rem;
-          text-anchor:end;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          user-select: none;
-        }
-  
-        @media (min-width: 768px) {
-          .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-          }
-        }
-  
-        .b-example-divider {
-          height: 3rem;
-          background-color: rgba(0, 0, 0, .1);
-          border: solid rgba(0, 0, 0, .15);
-          border-width: 1px 0;
-          box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-        }
-  
-        .b-example-vr {
-          flex-shrink: 0;
-          width: 1.5rem;
-          height: 100vh;
-        }
-  
-        .bi {
-          vertical-align: -.125em;
-          fill: currentColor;
-        }
-  
-        .nav-scroller {
-          position: relative;
-          z-index: 2;
-          height: 2.75rem;
-          overflow-y: hidden;
-        }
-  
-        .nav-scroller .nav {
-          display: flex;
-          flex-wrap: nowrap;
-          padding-bottom: 1rem;
-          margin-top: -1px;
-          overflow-x: auto;
-          text-align: center;
-          white-space: nowrap;
-          -webkit-overflow-scrolling: touch;
-        }
-      </style>
-    <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
-  
-
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="icofont/icofont.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="icon" type="image/png" href="upload/logo1.png"/>
+  <title>Soi Arte e Cultura</title>
 </head>
 
-
-
 <body>
-    <!--Colapsa Hor, Responsividade tela large, Esquema bg-light-->
-    <nav class="navbar navbar-expand-lg bg-light configNavbar">
-        <!--Container Fluido--> 
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html?page=inicio"><img src="upload/logo1.png" width="240px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
-                <i class="icofont-navigation-menu"></i>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" id="inicio" href="index.html?page=inicio">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="empresa" href="index.html?page=empresa" target="_blank" rel="noopener noreferrer">A Empresa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="portfolio" href="index.html?page=portfolio" target="_blank" rel="noopener noreferrer">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="midias" href="index.html?page=midias" target="_blank" rel="noopener noreferrer">Midias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="parceiros" href="index.html?page=parceiros" target="_blank" rel="noopener noreferrer">Parceiros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="contato" href="index.html?page=contato" target="_blank" rel="noopener noreferrer">Contato</a>
-                    </li>
-                    <li class="nav-item">
+  <!--NAVBAR COM RESPONSIVIDADE TELA LARGE E ESQUEMA DE CORES PERSONALIZADAS COM A LOGO-->
+  <!--LOGO EMPRESA A ESQUERDA E OPÇÕES A DIREITA.-->
+  <nav class="navbar navbar-expand-lg bg-light configNavbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html?page=inicio"><img src="upload/logo1.png" width="240px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="icofont-navigation-menu"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" id="inicio" href="index.html?page=inicio">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="empresa" href="index.html?page=empresa" target="_blank" rel="noopener noreferrer">A Empresa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="portfolio" href="index.html?page=portfolio" target="_blank" rel="noopener noreferrer">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="midias" href="index.html?page=midias" target="_blank" rel="noopener noreferrer">Midias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="parceiros" href="index.html?page=parceiros" target="_blank" rel="noopener noreferrer">Parceiros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contato" href="index.html?page=contato" target="_blank" rel="noopener noreferrer">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="cadastro" href="index.html?page=cadastro" target="_blank" rel="noopener noreferrer">Trabalhe Conosco</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-                        <a class="nav-link" id="cadastro" href="index.html?page=cadastro" target="_blank" rel="noopener noreferrer">Trabalhe Conosco</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!--CONTAINER PRINCIPAL - RECEBE DADOS INJETADOS DA VIEWS EM /VIEWS-->
+  <main>
+    <div class="container" id="content"></div>
+  </main>
 
-    <main>
-        <div class="container" id="content">
-        </div>
-    </main>
+  <!--FOOTER COM ICONES DE REDES SOCIAIS E WHATSAPP NA PRIMEIRA LINHA E COPYRIGTH NA SEGUNDA LINHA-->
+  <footer class="page-footer float-end text-end">
+    <div class="footer-social">
+      <a href="https://www.instagram.com/soiartecultura/" target="_blank" class="me-2"><i class="icofont-instagram icofont-2x"></i>
+      <a href="https://www.facebook.com/soiartecultura/" target="_blank" class="me-2"><i class="icofont-facebook icofont-2x"></i></a>
+      <a href="https://www.linkedin.com/in/soifree/" target="_blank" class="me-2"><i class="icofont-linkedin icofont-2x"></i></a>
+      <a href="http://www.youtube.com" target="_blank" class="me-2"><i class="icofont-youtube icofont-2x"></i></a>
+      <a href="https://api.whatsapp.com/send?phone=5547992439789&text=Olá, gostaria de encaminhar um projeto cultural." target="_blank"><i class="icofont-whatsapp icofont-2x"></i></a>
+    </div>
+    
+    <hr class="my-3">
+    
+    <div class="footer-copyright">
+      <span class="copy">&copy; 2022 | Todos os direitos reservados | </span>
+      <a href="https://www.devs2blu.com.br/" target="_blank">D2B - G6</a>
+    </div>
+  </footer>
 
     <footer class="page-footer float-end text-end">
             <div class="footer-social">
