@@ -13,7 +13,7 @@ git clone "url do seu reposiório"
 ```
 2. Após o clone, abra o projeto no editor de código Ao visualizar o código e rodar o projeto, dê preferência para a extensão _live server_ do editor de código VS Code ( com esta extensão, permite otimizar a navegação do site institucional).
 
-3. Acesse o site no link 
+3. Acesse o site no link [Demo](https://cuelhosandra.github.io/TrabalhoProd.Cultural/)
 
 4. Abaixo o padrão dos arquivos de html, css e imagens do projeto.
 
