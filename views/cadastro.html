@@ -1,41 +1,41 @@
 
     <h3>Preencha os campos abaixo</h3>
     
-    <form id="cadastro" class="row g-3" onsubmit="return false">
+    <form action="" id="cadastro" class="row g-3" onsubmit="return false;">
         <input type="hidden" id="idRegistro" value="">
             
         <div class="col-md-6">
             <label for="nome" class="form-label">Nome</label>
-            <input type="text" class="form-control" placeholder="Nome" id="idNome" required>
+            <input type="text" class="form-control" placeholder="Nome" id="nome" required>
         </div>
         <div class="col-md-6">
             <label for="sobrenome" class="form-label">Sobrenome</label>
-            <input type="text" class="form-control" placeholder="Sobrenome" id="idSobrenome" required>
+            <input type="text" class="form-control" placeholder="Sobrenome" id="sobrenome" required>
         </div>
         <div class="col-md-2">
-            <label for="inputZip" class="form-label">CEP</label>
-            <input type="text" class="form-control" placeholder="CEP" id="inputZip" onfocusout="pesquisarCep(this.value)">
+            <label for="cep" class="form-label">CEP</label>
+            <input type="text" class="form-control" placeholder="CEP" id="cep" onfocusout="pesquisarCep(this.value)">
             
         </div>
         <div class="col-8">
-            <label for="inputAddress" class="form-label">Logradouro</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="Ex: Rua apucarana, 123" required>
+            <label for="logradouro" class="form-label">Logradouro</label>
+            <input type="text" class="form-control" id="logradouro" placeholder="Ex: Rua apucarana, 123" required>
         </div>
         <div class="col-md-2">
-            <label for="number" class="form-label">Número</label>
-            <input type="text" class="form-control" placeholder="Numero" id="number" required>
+            <label for="numero" class="form-label">Número</label>
+            <input type="text" class="form-control" placeholder="Numero" id="numero" required>
         </div>
         <div class="col-12">
-            <label for="inputAddress2" class="form-label">Bairro</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, casa, galpão..." required>
+            <label for="bairro" class="form-label">Bairro</label>
+            <input type="text" class="form-control" id="bairro" placeholder="Apartamento, casa, galpão..." required>
         </div>
         <div class="col-md-6">
-            <label for="inputCity" class="form-label">Cidade</label>
-            <input type="text" class="form-control" id="inputCity" placeholder="Cidade">
+            <label for="cidade" class="form-label">Cidade</label>
+            <input type="text" class="form-control" id="cidade" placeholder="Cidade">
         </div>
         <div class="col-md-4">
-            <label for="inputState" class="form-label">Estado</label>
-            <input type="text" class="form-control" id="inputState" placeholder="Estado">
+            <label for="estado" class="form-label">Estado</label>
+            <input type="text" class="form-control" id="estado" placeholder="Estado">
             <!-- <select id="inputState" class="form-select"> -->
                 <!-- <option selected>Escolha...</option>
                     <option value="1">Santa Catarina</option>
@@ -57,54 +57,56 @@
                     </div>
                 </div> -->
                 <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" placeholder="name@example.com" id="inputEmail4" required>
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="name@example.com" id="email" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Password</label>
-                    <input type="password" class="form-control" placeholder="Password" id="inputPassword4" required>
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" placeholder="Password" id="password" required>
                 </div>
 
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Carta de apresentação</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Fale sobre você..." rows="3"></textarea>
+                    <label for="cartaTexto" class="form-label">Carta de apresentação</label>
+                    <textarea class="form-control" id="cartaTexto" placeholder="Fale sobre você..." rows="3"></textarea>
                 </div>
 
         <form action="">       
             <h6>Anexe seu currículo abaixo:</h4>
             <div class="input-group mb-3">
-                <label class="input-group-text" for="inputGroupFile01">Upload</label>
-                <input type="file" class="form-control" id="inputGroupFile01">
+                <label class="input-group-text" for="arquivo">Upload</label>
+                <input type="file" class="form-control" id="arquivo">
             </div>
-            
+                        
             <div class="col-6">
-                <button href="index.html?page=curriculo" type="submit" class="btn btn-primary">Salvar</button>
+                <button type="submit" class="btn btn-primary">Salvar</button>
             </div>
             <div class="col-6">
                 <a type="submit" class="btn btn-primary" href="index.html?page=curriculo" target="_blank" rel="noopener noreferrer role=">Visualizar currículo</a>
                 <!-- <button type="submit" class="btn btn-primary"> Ver currículo</button> -->
+                <a type="submit" class="btn btn-primary" href="index.html?page=curriculo">Visualizar currículo</a>
             </div>
         </form>
+
     </form>
 
     <h3>Currículo</h3>
 
 
-    <table>
+    <table class="table">
         <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Sobrenome</th>
-                <th>CEP</th>
-                <th>Logradouro</th>
-                <th>Número</th>
-                <th>Bairro</th>
-                <th>Cidade</th>
-                <th>Estado</th>
-                <th>Email</th>
-                <th>Password</th>
-                <th>Carta de apresentação</th>
-            </tr>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Sobrenome</th>
+            <th scope="col">CEP</th>
+            <th scope="col">Logradouro</th>
+            <th scope="col">Número</th>
+            <th scope="col">Bairro</th>
+            <th scope="col">Cidade</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Email</th>
+            <th scope="col">Carta de apresentação</th>
+          </tr>
         </thead>
     </table>
    
