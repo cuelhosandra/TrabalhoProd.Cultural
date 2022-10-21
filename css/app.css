@@ -500,9 +500,9 @@ imgvalor{
 
 .container.gallery-container {
   background-color: #fff;
-  color: #35373a;
+  color: #99d688;
   min-height: 100vh;
-  padding: 90px 10px;
+  padding: 20px 10px;
 }
 
 .gallery-container h1 {
@@ -552,7 +552,7 @@ imgvalor{
 
 
 .tz-gallery .lightbox:after {
-  position: absolute;
+/*  position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
