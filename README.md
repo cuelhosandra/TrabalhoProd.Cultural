@@ -1,7 +1,8 @@
 # TrabalhoProd.Cultural
 
 +Devs2Blu | Grupo 6 | Projeto - Site Institucional SOI Arte e Cultura
-Professor: Diego Bracellos
+
+<p>Professor: Diego Bracellos.</p>
 
 ## Orientações sugestivas:
 
@@ -12,7 +13,9 @@ git clone "url do seu reposiório"
 ```
 2. Após o clone, abra o projeto no editor de código Ao visualizar o código e rodar o projeto, dê preferência para a extensão _live server_ do editor de código VS Code ( com esta extensão, permite otimizar a navegação do site institucional).
 
-3. Abaixo o padrão dos arquivos de html, css e imagens do projeto.
+3. Acesse o site no link 
+
+4. Abaixo o padrão dos arquivos de html, css e imagens do projeto.
 
 ```
 index.html
