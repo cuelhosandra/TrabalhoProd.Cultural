@@ -1,37 +1,38 @@
 
-let form = document.getElementById('cadastro');
 
-form.addEventListener('submit', function(){
+
+let formulario = document.getElementById('cadastro');
+
+formulario.addEventListener('submit', function(){
     let storage = (localStorage.CURRICULO) ? JSON.parse(localStorage.CURRICULO) : [];
 
 
-    let idNome = document.querySelector('#idNome').value;
-    let idSobrenome = document.querySelector('#idSobrenome').value;
-    let inputZip = document.querySelector('#inputZip').value;
-    let inputAddress = document.querySelector('#inputAddress').value;
-    let number = document.querySelector('#number').value;
-    let inputAddress2 = document.querySelector('#inputAddress2').value;
-    let inputCity = document.querySelector('#inputCity').value;
-    let inputState = document.querySelector('#inputState').value;
-    let inputEmail4 = document.querySelector('#inputEmail4').value;
-    let exampleFormControlTextarea1 = document.querySelector('#exampleFormControlTextarea1').value;
-    // let upload = document.querySelector('#inputGroupFile01').value;
+    let nome = document.querySelector('#nome').value;
+    let sobrenome = document.querySelector('#sobrenome').value;
+    let cep = document.querySelector('#cep').value;
+    let logradouro = document.querySelector('#logradouro').value;
+    let numero = document.querySelector('#numero').value;
+    let bairro = document.querySelector('#bairro').value;
+    let cidade = document.querySelector('#cidade').value;
+    let estado = document.querySelector('#estado').value;
+    let email = document.querySelector('#email').value;
+    let cartaTexto = document.querySelector('#cartaTexto').value;
+    let arquivo = document.querySelector('#arquivo').value;
 
 
     let curriculo = {
 
-        "id" : id,
-        "idNome" : idNome,
-        "idSobrenome" : idSobrenome,
-        "inputZip" : inputZip,
-        "inputAddress" : inputAddress,
-        "number" : number,
-        "inputAddress2" : inputAddress2,
-        "inputCity" : inputCity,
-        "inputState" : inputState,
-        "inputEmail4" : inputEmail4,
-        "exampleFormControlTextarea1" : exampleFormControlTextarea1,
-        // "inputGroupFile01" : upload
+        "nome" : nome,
+        "sobrenome" : sobrenome,
+        "cep" : cep,
+        "logradouro" : logradouro,
+        "numero" : numero,
+        "bairro" : bairro,
+        "cidade" : cidade,
+        "estado" : estado,
+        "email" : email,
+        "cartaTexto" : cartaTexto,
+        "arquivo" : arquivo
     
     }
 
@@ -39,7 +40,7 @@ form.addEventListener('submit', function(){
 
     if (!submitButton) {
         
-        storage.push(veiculo);
+        storage.push(curriculo);
         msgSuccess = 'Cadastro efetuado com sucesso.';
 
     } else {
@@ -53,32 +54,37 @@ form.addEventListener('submit', function(){
 
     alert(msgSuccess);
 
-    form.reset();
-    listarDados();
+    formulario.reset();
+    listarCurriculo();
     document.querySelector('button').value = '';
 
 })
 
-function listarDados() {
+function listarCurriculo() {
+
     if (localStorage.CURRICULO) {
+
         let dados = (localStorage.CURRICULO) ? JSON.parse(localStorage.CURRICULO) : [];
         let estrutura = '';
 
         for (const i in dados) {
             
             estrutura += `
-            <tr>
-                <td>${dados[i].idNome}</td>
-                <td>${dados[i].idSobrenome}</td>
-                <td>${dados[i].inputZip}</td>
-                <td>${dados[i].inputAddress}</td>
-                <td>${dados[i].number}</td>
-                <td>${dados[i].inputAddress2}</td>
-                <td>${dados[i].inputCity}</td>
-                <td>${dados[i].inputState}</td>
-                <td>${dados[i].inputEmail4}</td>
-                <td>${dados[i].exampleFormControlTextarea1}</td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td>${dados[i].nome}</td>
+                    <td>${dados[i].sobrenome}</td>
+                    <td>${dados[i].cep}</td>
+                    <td>${dados[i].logradouro}</td>
+                    <td>${dados[i].numero}</td>
+                    <td>${dados[i].bairro}</td>
+                    <td>${dados[i].cidade}</td>
+                    <td>${dados[i].estado}</td>
+                    <td>${dados[i].email}</td>
+                    <td>${dados[i].cartaTexto}</td>
+                    <td>${dados[i].arquivo}</td>
+                </tr>
+            <tbody>
             `;
         }
 
@@ -88,7 +94,7 @@ function listarDados() {
 
         let estrutura = `
             <tr>
-                <td colspan="7" align="center">Não existem dados</td>
+                <td colspan="12" align="center">Não existem dados</td>
             </tr>
         `;
 
@@ -97,4 +103,4 @@ function listarDados() {
     }
 }
 
-listarDados();
+listarCurriculo();
