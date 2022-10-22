@@ -94,9 +94,9 @@ main{
 
 /********************* FEITO POR SANDRA *************/
 
-/* /PAGINA A EMPRESA FEITO POR SANDRA/
+/* PAGINA A EMPRESA FEITO POR SANDRA */
 
-/SLOGAN/ */
+/* SLOGAN */
 
 h2.slogan {
    display: flex;
@@ -115,6 +115,11 @@ h2.slogan {
 .elementstyle{
     font-size: 17px;
     line-height: 33px;
+}
+
+.linhahorizontal{
+  width: 1116px;
+  border: 0.3px solid #000;
 }
 
 /* TIMELINE BOOTSTRAP - COM ALGUMAS ALTERAÇÕES - RESPONSIVO PARA MOBILE */
@@ -405,6 +410,7 @@ imgvalor{
   box-shadow: 0 0 40px 40px #d1dae3 inset, 0 0 0 0 #d1dae3;
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
+  font-size: 20px;
 }
 .third:hover {
   box-shadow: 0 0 10px 0 #99d688 inset, 0 0 10px 4px #99d688;
@@ -431,7 +437,7 @@ imgvalor{
   background-color: #d1dae3;
   text-align: center;
 
-/* tamanho, tipo, cor */
+/* TAMANHO, TIPO E COR */
 
   border:0.5px solid #99d688;
   border-radius: 10px;
@@ -485,9 +491,6 @@ imgvalor{
   transition:all 0.5s;
 }
 
-/* PAGINA COMPREAQUI */
-
-
 
 /********************* FEITO POR PAULO *************/
 
@@ -497,9 +500,9 @@ imgvalor{
 
 .container.gallery-container {
   background-color: #fff;
-  color: #35373a;
+  color: #99d688;
   min-height: 100vh;
-  padding: 90px 10px;
+  padding: 20px 10px;
 }
 
 .gallery-container h1 {
@@ -513,7 +516,7 @@ imgvalor{
   text-align: center;
   margin: 25px auto;
   font-size: 18px;
-  color: #999;
+  color: #84659B;
 }
 
 .tz-gallery {
@@ -549,7 +552,7 @@ imgvalor{
 
 
 .tz-gallery .lightbox:after {
-  position: absolute;
+/*  position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
