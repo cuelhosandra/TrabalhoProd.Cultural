@@ -26,23 +26,37 @@ function onclickFooter(){
   document.getElementById("footer-social").style.color= 'red';
 }
 
+// Função para armazenar data, hora e página acessada no Local Storage
 function CarregouPagina(){
   var data = new Date();
 
-  var dia     = data.getDate();           // 1-31
-  var mes     = data.getMonth();          // 0-11 (zero=janeiro)
-  var ano2    = data.getYear();           // 2 dígitos
-  var hora    = data.getHours();          // 0-23
-  var min     = data.getMinutes();        // 0-59
-  var seg     = data.getSeconds();        // 0-59
+  var dia     = data.getDate();           
+  var mes     = data.getMonth();          
+  var ano    = data.getFullYear();           
+  var hora    = data.getHours();          
+  var min     = data.getMinutes();        
+  var seg     = data.getSeconds();        
 
-  var str_data = dia + '/' + (mes+1) + '/' + ano2;
-  var str_hora = hora + ':' + min + ':' + seg;
+  var dataVis = `${dia}/${mes+1}/${ano}`;
+  var horaVis = `${hora}:${min}:${seg}`;
 
   let url = location.href;
   let view = url.split('=');
-  let sessao = (view[1] != undefined) ? view[1] : 'inicio'; 
-  console.log(str_data + " - " + str_hora + " - " + "Carregou página " + sessao);
+  let paginaVis = (view[1] != undefined) ? view[1] : 'inicio'; 
+  console.log(`${dataVis} - ${horaVis} - ${paginaVis}`);
+    let storage = (localStorage.VISITAS) ? JSON.parse(localStorage.VISITAS) : [];
+
+    // definir objeto do veículo
+    let visita = {
+      "DataVis" : dataVis,
+      "HoraVis" : horaVis,
+      "PaginaVis" : paginaVis
+    }
+
+    storage.push(visita);
+    
+    // salvar no localStorage
+    localStorage.setItem('VISITAS', JSON.stringify(storage));
 }
 
 function onclickAccordion(){
