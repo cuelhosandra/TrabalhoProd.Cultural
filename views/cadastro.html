@@ -1,8 +1,9 @@
 
     <h3>Preencha os campos abaixo</h3>
     
-    <form action="" id="cadastro" class="row g-3" onsubmit="return false;">
-        <input type="hidden" id="idRegistro" value="">
+    <!-- <form action="" id="cadastro" class="row g-3" onsubmit="return false;"> -->
+    <form action="" id="cadastro" class="row g-3">
+        <input type="hidden" id="idRegistro" onclick="cadastro()">
             
         <div class="col-md-6">
             <label for="nome" class="form-label">Nome</label>
@@ -61,9 +62,13 @@
                     <input type="email" class="form-control" placeholder="name@example.com" id="email" required>
                 </div>
                 <div class="col-md-6">
+                    <label for="emailConfirma" class="form-label">Confirme o Email</label>
+                    <input type="email" class="form-control" placeholder="name@example.com" id="emailConfirma" required>
+                </div>
+                <!-- <div class="col-md-6">
                     <label for="password" class="form-label">Password</label>
                     <input type="password" class="form-control" placeholder="Password" id="password" required>
-                </div>
+                </div> -->
 
                 <div class="mb-3">
                     <label for="cartaTexto" class="form-label">Carta de apresentação</label>
@@ -83,32 +88,11 @@
             <div class="col-6">
                 <a type="submit" class="btn btn-primary" href="index.html?page=curriculo" target="_blank" rel="noopener noreferrer role=">Visualizar currículo</a>
                 <!-- <button type="submit" class="btn btn-primary"> Ver currículo</button> -->
-                <a type="submit" class="btn btn-primary" href="index.html?page=curriculo">Visualizar currículo</a>
+                <!-- <a type="submit" class="btn btn-primary" href="index.html?page=curriculo">Visualizar currículo</a> -->
             </div>
         </form>
 
     </form>
-
-    <h3>Currículo</h3>
-
-
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Nome</th>
-            <th scope="col">Sobrenome</th>
-            <th scope="col">CEP</th>
-            <th scope="col">Logradouro</th>
-            <th scope="col">Número</th>
-            <th scope="col">Bairro</th>
-            <th scope="col">Cidade</th>
-            <th scope="col">Estado</th>
-            <th scope="col">Email</th>
-            <th scope="col">Carta de apresentação</th>
-          </tr>
-        </thead>
-    </table>
    
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- <script src="../js/apiCep.js"></script> -->
